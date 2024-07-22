@@ -8,11 +8,14 @@ export default function CountButton({ type, setCount }) {
         setCount((prev) => prev + 1);
       }}
     >
-      {type === "minus" ? (
+      {/* {type === "minus" ? (
         <MinusIcon className="count-btn-icon" />
       ) : (
         <PlusIcon className="count-btn-icon" />
-      )}
+      )} */}
+
+      {type == "minus" && <MinusIcon className="count-btn-icon" />}
+      {type == "plus" && <PlusIcon className="count-btn-icon" />}
     </button>
   );
 }
