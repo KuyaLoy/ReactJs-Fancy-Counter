@@ -7,7 +7,7 @@ export default function Card() {
   return (
     <div>
       <Title />
-      <Count number={5} size="lg" />
+      <Count />
       <ResetButton />
       <CountButtons />
     </div>
