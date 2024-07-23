@@ -18,6 +18,7 @@ export default function CountButton({ type, setCount, locked }) {
         return newCount;
       }
     });
+    event.currentTarget.blur();
   };
   return (
     <button disabled={locked} className="count-btn" onClick={handleClick}>
